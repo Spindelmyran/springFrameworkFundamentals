@@ -1,0 +1,16 @@
+**/*.log
+**/*.swp
+**/*.log.*
+**/target
+**/bower_components
+**/node_modules
+**/webapp_build
+**/*.iml
+**/projectFilesBackup*
+**/*.ipr
+**/*.iws
+**/*.idea
+**/.DS_Store
+**/overlays
+**/dependency-reduced-pom.xml
+**/.flattened-pom.xml
