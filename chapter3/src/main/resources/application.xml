@@ -16,5 +16,6 @@
                 <value>Saturday</value>
             </list>
         </property>
+<!--        <property name="message" value="Hej där"/>-->
     </bean>
 </beans>
