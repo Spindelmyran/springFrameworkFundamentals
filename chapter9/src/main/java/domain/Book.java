@@ -25,15 +25,18 @@ public class Book
 		return this.isbn;
 	}
 
-	public String getTitle() {
-		return title;
+	public String getTitle() 
+	{
+		return this.title;
 	}
-
-	public String getAuthor() {
-		return author;
+	
+	public String getAuthor()
+	{
+		return this.author;
 	}
-
-	public double getPrice() {
-		return price;
+	
+	public double getPrice()
+	{
+		return this.price;
 	}
 }

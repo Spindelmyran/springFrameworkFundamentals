@@ -1,24 +1,21 @@
 package client;
 
+import java.util.List;
+
 import domain.Book;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 import services.BookService;
-import services.PurchasingService;
-
-import java.util.List;
 
 public class Client 
 {
 	public static void main(String[] args)
-	{
-
+	{	
 		ClassPathXmlApplicationContext container = new ClassPathXmlApplicationContext("application.xml");
 
 		BookService bookService = container.getBean(BookService.class);
-
-		bookService.registerNewBook(new Book("1234567","Krig och fred","Leo Tolstoy",100));
-
+		
+		bookService.registerNewBook(new Book("2384928389223","War and Peace", "Leo Tolstoy", 10.99));
+		
 		List<Book> allBooks = bookService.getEntireCatalogue();
 		for (Book next: allBooks)
 		{
